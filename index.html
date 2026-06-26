@@ -4,23 +4,56 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nexora AI</title>
+
 <link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
 <div class="container">
 
-<h1>Nexora AI</h1>
+<header>
+
+<h1>🤖 Nexora AI</h1>
+
 <p>Your Personal AI Assistant</p>
 
-<div class="chat-box">
-<div class="ai">🤖 Hello! I'm Nexora AI. How can I help you?</div>
+</header>
+
+<div class="chat-box" id="chatBox">
+
+<div class="message ai">
+👋 Hello! I'm Nexora AI.<br>
+আমি বাংলা ও English দুই ভাষাতেই কথা বলতে পারি।
+</div>
+
+</div>
+
+<div class="typing" id="typing">
+Thinking...
 </div>
 
 <div class="input-area">
-<input type="text" placeholder="Type your message...">
-<button>➤</button>
-<button>🎤</button>
+
+<input
+id="userInput"
+type="text"
+placeholder="Type your message..."
+autocomplete="off"
+/>
+
+<button id="sendBtn">
+➤
+</button>
+
+<button id="voiceBtn">
+🎤
+</button>
+
 </div>
 
 </div>
